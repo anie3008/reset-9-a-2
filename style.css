@@ -1,13 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-* {
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {background: hsla(0, 0%, 0%, 0.877);
     margin: 0;
     padding: 0;
-    background-color: black;
     color: rgb(255, 255, 255);
     font-family: inter;
 }
+.primary-btn{
+    background: rgb(230, 83, 60);
+    border-radius: 42px;
+    padding: 16px 40px;
+    font-size: 18px;
+font-weight: 600;
+}
+.paragraph{
+    color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+}
  .navbar {
+    
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -19,7 +34,7 @@
 .navbar .title h3{
     
 color: rgb(230, 83, 60);
-font-size: 36px;
+font-size: 2.25rem;
 font-weight: 800;
 }
 
@@ -27,7 +42,6 @@ font-weight: 800;
     width: 40%;
     gap: 47;
     list-style: none;
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,4 +57,119 @@ font-weight: 800;
 .navbar .items a:hover{
     border-radius: 46px;
     background: rgb(230, 83, 60);
+}
+.banner{ 
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+gap: 20;
+}
+.banner .banner-text{
+    
+    height: 100vh;
+    margin: auto 0px;
+    width: 100rem;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+.banner .banner-text h1{
+    font-size: 78px;
+    font-weight: 900;
+}
+
+.banner .banner-text .banner-btn{
+   margin-top: 20px;
+ display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+.download-btn{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 40px;
+}
+
+
+.banner .banner-img{
+    position: relative;
+    background-image: url(./images/Images\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: auto, 0px;
+    width: 100%;
+}
+.circle{
+    width: 40px;
+height: 40px;
+border-radius: 50%;
+background: rgb(230, 83, 60)
+}
+.workout-card{
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+.video-card{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+    width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+font-size: 40px;
+font-weight: 900;
+text-align: center;
+backdrop-filter: blur(20px);
+background: rgba(48, 48, 48, 0.54);
+
+}
+.cards{
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin-top: 4.5rem; 
+}
+.image{
+    border: 0.5px solid white;
+    border-radius: 50%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-text{
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center; 
+    margin-bottom: 1rem; 
+}
+.card-title{
+    font-size: 18px;
+font-weight: 600;
+text-align: center;
+}
+.text-center{
+    text-align: center; 
 }
