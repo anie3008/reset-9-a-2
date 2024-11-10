@@ -249,12 +249,12 @@ font-weight: 400;
 
 }
 .data{
-    width: 35px;
-    grid-template-columns: repeat(2 1fr);
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 5px;
     column-gap: 2px;
-    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .facilities-card{
     display: flex;
@@ -262,6 +262,22 @@ font-weight: 400;
     justify-content: space-between;
     align-items: center;
     margin: 1rem;
+}
+.team-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+.team-img{
+    margin-left: 1.5px;
+    position: relative;
+}
+.team-text{
+    position: absolute;
+    left: 2%;
+    bottom: 12%;
 }
 
 
@@ -328,5 +344,12 @@ margin-top: 4.5rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+.team-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    
 }
     }
